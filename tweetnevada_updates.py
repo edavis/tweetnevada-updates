@@ -5,6 +5,7 @@ class TweetNevadaUpdates(MuninMongoDBPlugin):
     category = "TweetNevada"
     vlabel = "updates"
     scale = False
+    period = "hour"
 
     @property
     def fields(self):
