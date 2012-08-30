@@ -6,7 +6,6 @@ class TweetNevadaUpdates(MuninMongoDBPlugin):
     category = "TweetNevada"
     vlabel = "updates per ${graph_period}"
     scale = False
-    period = "hour"
 
     @property
     def fields(self):
