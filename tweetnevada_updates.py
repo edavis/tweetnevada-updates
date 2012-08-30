@@ -3,7 +3,7 @@ from munin.mongodb import MuninMongoDBPlugin
 class TweetNevadaUpdates(MuninMongoDBPlugin):
     title = "Number of Updates"
     category = "TweetNevada"
-    vlabel = "updates"
+    vlabel = "updates per ${graph_period}"
     scale = False
     period = "hour"
 
