@@ -11,10 +11,10 @@ class TweetNevadaUpdates(MuninMongoDBPlugin):
     def fields(self):
         return [
             ("untrusted",
-             dict(label="Untrusted updates", info="number of untrusted updates", type="COUNTER")),
+             dict(label="untrusted updates", info="number of untrusted updates", type="COUNTER")),
 
             ("trusted",
-             dict(label="Trusted updates", info="number of trusted updates", type="COUNTER"))]
+             dict(label="trusted updates", info="number of trusted updates", type="COUNTER")),
 
     def execute(self):
         db = self.connection['tweetnv']
